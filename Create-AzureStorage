@@ -4,7 +4,7 @@ Connect-AzAccount
 # Variables for Storage Account and Blob Container
 $resourceGroupName = "MyResourceGroup"
 $storageAccountName = "mystorageaccount"  # Replace with your desired storage account name
-$location = "East US"
+$location = "East US"  # Replace with your desired location
 $containerName = "myblobcontainer"  # Replace with your desired blob container name
 
 # Create a new resource group
