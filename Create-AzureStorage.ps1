@@ -2,16 +2,21 @@
 Connect-AzAccount
 
 # Variables for Storage Account and Blob Container
-$resourceGroupName = "MyResourceGroup"
-$storageAccountName = "mystorageaccount"  # Replace with your desired storage account name
-$location = "East US"
-$containerName = "myblobcontainer"  # Replace with your desired blob container name
+$resourceGroupName = "MyResourceGroup"       # Replace with the desired resource group name
+$storageAccountName = "mystorageaccount"     # Replace with your desired storage account name
+$location = "East US"                        # Replace with your desired Azure region
+$containerName = "myblobcontainer"           # Replace with your desired blob container name
 
-# Create a new resource group
-New-AzResourceGroup -Name $resourceGroupName -Location $location
-
-# Create a new Storage Account
-$storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName -SkuName Standard_LRS -Location $location
+# Create the new Storage Account
+$storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName `
+                                      -Name $storageAccountName `
+                                      -Location $location `
+                                      -SkuName "Standard_LRS"  # Replace with the desired SKU (e.g., Standard_LRS, Standard_GRS, etc.)
 
 # Create a new Blob Container in the Storage Account
-$container = New-AzStorageContainer -Name $containerName -Context $storageAccount.Context -Permission Off
+$container = New-AzStorageContainer -Name $containerName `
+                                    -Context $storageAccount.Context `
+                                    -Permission Off
+
+Write-Host "Storage Account '$storageAccountName' created successfully in '$location'."
+Write-Host "Blob Container '$containerName' created successfully in Storage Account '$storageAccountName'."
