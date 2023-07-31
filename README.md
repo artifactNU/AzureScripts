@@ -1,4 +1,4 @@
-PowerShell Scripts for Azure - Getting Started Guide
+Getting Started Guide
 Welcome to the GitHub repository for PowerShell scripts tailored for Microsoft Azure! This guide will walk you through the basics of using and writing PowerShell scripts to interact with Azure services.
 
 
