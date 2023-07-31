@@ -21,6 +21,8 @@ Configure the VM using New-AzVMConfig, including OS settings, VM size, and netwo
 Deploy the VM using New-AzVM.
 Note: The script performs a check to ensure the resource group and VM don't already exist before creating them, reducing the risk of accidental duplications.
 
+-----------------------------------------------------------------
+
 2. Automated Backup and Restore Script (backup_restore.ps1)
 This script allows you to set up automated backups for an Azure Virtual Machine (VM) and perform manual backups using Azure Backup services. Additionally, you have the option to restore the VM to a previous state using the backup data if required.
 
