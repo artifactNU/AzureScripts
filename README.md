@@ -4,7 +4,6 @@ Welcome to the GitHub repository for PowerShell scripts tailored for Microsoft A
 
 ----------------------------------------------------------------
 
-1. Getting Started
 Prerequisites
 To use PowerShell scripts for Azure, you need the following:
 
@@ -24,7 +23,7 @@ This will prompt you to log in with your Azure credentials and establish a conne
 
 ----------------------------------------------------------------
 
-2. Using the Existing PowerShell Scripts
+Using the Existing PowerShell Scripts
 Executing a Script
 In this repository, you'll find a collection of pre-existing PowerShell scripts. To use them:
 
