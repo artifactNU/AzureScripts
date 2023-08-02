@@ -1,5 +1,4 @@
-Azure Resource Group Creation Script
-The Azure Resource Group Creation Script is a PowerShell script designed to facilitate the creation of an Azure Resource Group. A Resource Group is a fundamental building block in Azure that allows you to organize and manage related resources within a single container. This script automates the process of creating a new Resource Group in your Azure subscription.
+Azure-Resource-Group is a PowerShell script designed to facilitate the creation of an Azure Resource Group. A Resource Group is a fundamental building block in Azure that allows you to organize and manage related resources within a single container. This script automates the process of creating a new Resource Group in your Azure subscription.
 
 Prerequisites
 Before using this script, ensure you have the following:
