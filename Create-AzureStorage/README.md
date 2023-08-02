@@ -1,5 +1,3 @@
-
-Azure Storage Account and Blob Container Management Scripts
 These scripts are designed to facilitate the creation of an Azure Storage Account and Blob Container, as well as the upload of a file to that container. Before executing the scripts, ensure that you have the Azure PowerShell module installed and configured with the necessary permissions to access your Azure account.
 
 -----------------------------------------------------------------
