@@ -1,11 +1,8 @@
-# Install and import the Az module (if not already installed)
-if (-not (Get-Module -Name Az -ErrorAction SilentlyContinue)) {
-    Install-Module -Name Az -Force
-}
-Import-Module Az -Force
+# Install Azure AD PowerShell module if not already installed
+# Install-Module -Name AzureAD
 
-# Connect to your Azure account (you will be prompted to log in if not already authenticated)
-Connect-AzAccount
+# Connect to your Azure AD tenant
+# Connect-AzureAD
 
 # Define the resource group name and location
 $resourceGroupName = "MyResourceGroup" # Replace with your desired resource group name
