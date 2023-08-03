@@ -1,5 +1,8 @@
-# Connect to your Azure account
-Connect-AzAccount
+# Install Azure AD PowerShell module if not already installed
+# Install-Module -Name AzureAD
+
+# Connect to your Azure AD tenant
+# Connect-AzureAD
 
 # Define the resource group and VM names
 $resourceGroupName = "MyResourceGroup"
