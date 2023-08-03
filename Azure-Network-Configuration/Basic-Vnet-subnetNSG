@@ -15,8 +15,7 @@ $nsgName = "YourNSGName"  # Replace with your desired Network Security Group (NS
 $vnet = New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $resourceGroupName -Location $location -AddressPrefix "10.0.0.0/16"
 
 # Create a new subnet in the virtual network
-$subnet = Add-AzVirtualNetworkSubnetConfig -Name $subnetName -VirtualNetwork $vnet -AddressPrefix "10.0.1.0/24"
-$vnet | Set-AzVirtualNetwork
+Add-AzVirtualNetworkSubnetConfig -Name $subnetName -VirtualNetwork $vnet -AddressPrefix "10.0.1.0/24" | Set-AzVirtualNetwork
 
 # Create a new Network Security Group (NSG)
 $nsg = New-AzNetworkSecurityGroup -ResourceGroupName $resourceGroupName -Location $location -Name $nsgName
@@ -26,7 +25,6 @@ $nsg | Add-AzNetworkSecurityRuleConfig -Name "Allow-RDP" -Description "Allow RDP
 $nsg | Set-AzNetworkSecurityGroup
 
 # Associate the NSG with the subnet
-Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName -AddressPrefix "10.0.1.0/24" -NetworkSecurityGroup $nsg
-$vnet | Set-AzVirtualNetwork
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnetName -AddressPrefix "10.0.1.0/24" -NetworkSecurityGroup $nsg | Set-AzVirtualNetwork
 
 Write-Host "Azure Virtual Network, Subnet, and Network Security Group have been created and configured successfully."
