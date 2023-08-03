@@ -1,5 +1,8 @@
-# Connect to your Azure account
-Connect-AzAccount
+# Install Azure AD PowerShell module if not already installed
+# Install-Module -Name AzureAD
+
+# Connect to your Azure AD tenant
+# Connect-AzureAD
 
 # Function to create a new Azure Storage Account and Blob Container
 function New-AzStorageAccountWithContainer {
