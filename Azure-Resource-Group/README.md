@@ -16,17 +16,9 @@ Execute the Script: Open a PowerShell session, navigate to the directory where t
 
 The script will perform the following steps:
 
-Check if the Azure PowerShell module is installed and, if not, automatically install it.
-Prompt you to log in to your Azure account to establish a connection.
 Define the desired resource group name and Azure region (location) within the script. Modify the variables $resourceGroupName and $location to match your preferences.
 Check if a resource group with the same name already exists. If not, it will create the new Resource Group with the specified name and location.
 Modify Resource Group Information: Within the script, you can modify the following variables to customize the Resource Group's properties:
 
 $resourceGroupName: Replace with your desired name for the new Resource Group.
 $location: Replace with your desired Azure region (e.g., "East US", "West Europe", etc.).
-
-The script includes several enhancements to ensure better user experience and reliability:
-
-Checks for the presence of the Azure PowerShell module and installs it if required.
-Prompts for Azure account login, ensuring secure and authorized access.
-Verifies if the Resource Group already exists before creating it, preventing accidental duplicates.
