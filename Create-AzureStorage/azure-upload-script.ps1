@@ -10,7 +10,7 @@ $fileToUpload = "C:\path\to\your\file.txt"     # Replace with the path to your l
 Connect-AzAccount
 
 # Function to upload a file to the Blob Container
-function Upload-FileToBlobContainer {
+function Set-AzBlobContainerContent {
     param (
         [string]$ResourceGroupName,
         [string]$StorageAccountName,
@@ -39,7 +39,7 @@ function Upload-FileToBlobContainer {
 
 try {
     # Call the function to upload the file to the Blob Container
-    Upload-FileToBlobContainer -ResourceGroupName $resourceGroupName `
+    Set-AzBlobContainerContent -ResourceGroupName $resourceGroupName `
                                -StorageAccountName $storageAccountName `
                                -ContainerName $containerName `
                                -FilePath $fileToUpload
