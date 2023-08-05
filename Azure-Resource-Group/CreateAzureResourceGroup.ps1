@@ -6,7 +6,7 @@
 
 # Define the resource group name and location
 $resourceGroupName = "MyResourceGroup" # Replace with your desired resource group name
-$location = "northeurope" # Replace with your desired Azure region
+$location = "swedencentral" # Replace with your desired Azure region
 
 # Check if the resource group already exists, and create it if it doesn't
 $existingResourceGroup = Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue
