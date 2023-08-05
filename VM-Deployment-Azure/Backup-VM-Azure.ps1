@@ -9,7 +9,7 @@ $resourceGroupName = "MyResourceGroup"
 $virtualMachineName = "MyVirtualMachine"
 
 # Set the Azure region where the backup vault will be created
-$location = "East US"
+$location = "swedencentral"
 
 # Set the backup policy name and retention period in days
 $backupPolicyName = "DailyBackupPolicy"
@@ -22,10 +22,6 @@ New-AzRecoveryServicesVault -ResourceGroupName $resourceGroupName -Name $backupV
 # Create a backup policy for the virtual machine
 New-AzRecoveryServicesBackupProtectionPolicy -Name $backupPolicyName -ResourceGroupName $resourceGroupName -VaultName $backupVaultName -WorkloadType AzureVM -RetentionDaily $retentionDays
 
-# Get the virtual machine ID
-$vm = Get-AzVM -ResourceGroupName $resourceGroupName -Name $virtualMachineName
-$vmID = $vm.Id
-
 # Enable backup protection for the virtual machine using the backup policy
 Set-AzRecoveryServicesBackupProtection -Policy $backupPolicyName -ResourceGroupName $resourceGroupName -VaultName $backupVaultName -WorkloadType AzureVM -Name $virtualMachineName
 
@@ -33,4 +29,4 @@ Set-AzRecoveryServicesBackupProtection -Policy $backupPolicyName -ResourceGroupN
 Backup-AzRecoveryServicesBackupItem -ResourceGroupName $resourceGroupName -VaultName $backupVaultName -WorkloadType AzureVM -Name $virtualMachineName
 
 # Optionally, you can restore the virtual machine using the backup data
-# Restore-AzRecoveryServicesBackupItem -ResourceGroupName $resourceGroupName -VaultName $backupVaultName -ItemName $virtualMachineName -StorageAccountId $vmID -RestoreToStagingStorageAccount
+# Restore-AzRecoveryServicesBackupItem -ResourceGroupName $resourceGroupName -VaultName $backupVaultName -ItemName $virtualMachineName -RestoreToStagingStorageAccount
