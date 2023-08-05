@@ -1,10 +1,9 @@
 Welcome to the GitHub repository for Azure-tailored PowerShell scripts!
 
 Prerequisites:
-Azure Account: You need an active Azure account with the required permissions.
+You need an active Azure account with the required permissions.
 
 To Get Started:
-
 Install-Module -Name Az -Force
 Connect-AzAccount
 Get-AzSubscription
