@@ -1,4 +1,4 @@
-Welcome to the GitHub repository for Azure-tailored PowerShell scripts! This guide will help you use and write PowerShell scripts for Azure services.
+Welcome to the GitHub repository for Azure-tailored PowerShell scripts!
 
 Prerequisites:
 Azure Account: You need an active Azure account with the required permissions.
