@@ -5,10 +5,10 @@
 # Connect-AzureAD
 
 # Variables
-$newUserDisplayName = "John Doe"  # Replace with the desired display name for the new user
+$newUserDisplayName = "John Doe"                     # Replace with the desired display name for the new user
 $newUserUPN = "john.doe@yourtenant.onmicrosoft.com"  # Replace with the desired user principal name (UPN) for the new user
-$newUserPassword = "YourSecurePassword"  # Replace with a strong and secure password for the new user
-$newGroupName = "YourNewGroupName"  # Replace with the desired name for the new group
+$newUserPassword = "YourSecurePassword"              # Replace with a strong and secure password for the new user
+$newGroupName = "YourNewGroupName"                   # Replace with the desired name for the new group
 
 # Create a new user in Azure AD
 $newUser = New-AzureADUser -DisplayName $newUserDisplayName `

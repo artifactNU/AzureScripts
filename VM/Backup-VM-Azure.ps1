@@ -1,5 +1,4 @@
 
-
 # Define the resource group and VM names
 $resourceGroupName = "MyResourceGroup"
 $virtualMachineName = "MyVirtualMachine"
