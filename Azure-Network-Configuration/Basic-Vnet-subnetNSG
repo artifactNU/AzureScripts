@@ -6,7 +6,7 @@
 
 # Variables (You can change these values as needed)
 $resourceGroupName = "YourResourceGroupName"  # Replace with your desired resource group name
-$location = "East US"  # Replace with your desired Azure region
+$location = "swedencentral"  # Replace with your desired Azure region
 $vnetName = "YourVirtualNetworkName"  # Replace with your desired virtual network name
 $subnetName = "YourSubnetName"  # Replace with your desired subnet name
 $nsgName = "YourNSGName"  # Replace with your desired Network Security Group (NSG) name
