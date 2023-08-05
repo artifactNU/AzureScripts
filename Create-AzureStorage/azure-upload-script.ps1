@@ -1,3 +1,4 @@
+
 # Variables for Storage Account and Blob Container
 $resourceGroupName = "MyResourceGroup"        # Replace with the desired resource group name
 $storageAccountName = "mystorageaccount"      # Replace with your storage account name
