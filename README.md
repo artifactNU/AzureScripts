@@ -4,10 +4,10 @@ Prerequisites:
 You need an active Azure account with the required permissions.
 
 To Get Started:
-Install-Module -Name Az -Force
-Connect-AzAccount
-Get-AzSubscription
-Select-AzSubscription -SubscriptionName "Your-Subscription-Name"
+# Install-Module -Name Az -Force
+# Connect-AzAccount
+# Get-AzSubscription
+# Select-AzSubscription -SubscriptionName "Your-Subscription-Name"
 
 
 Clone or download this repository.
