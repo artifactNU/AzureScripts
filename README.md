@@ -4,7 +4,7 @@ This project is designed as a learning platform to enhance skills in both PowerS
 ### Prerequisites:
 You need an active Azure account with the required permissions.
 
-To Get Started:
+### To Get Started:
 
 ```
 Install-Module -Name Az -Force
