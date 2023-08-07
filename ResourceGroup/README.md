@@ -1,19 +1,5 @@
 Azure-Resource-Group is a PowerShell script designed to facilitate the creation of an Azure Resource Group. A Resource Group is a fundamental building block in Azure that allows you to organize and manage related resources within a single container. This script automates the process of creating a new Resource Group in your Azure subscription.
 
-Prerequisites
-Before using this script, ensure you have the following:
-
-Azure PowerShell Module: The script requires the Azure PowerShell module to interact with your Azure account and resources. If you don't have the module installed, the script will automatically install it for you.
-
-Azure Account: You need an active Azure account with the necessary permissions to create Resource Groups. When executing the script, you will be prompted to log in to your Azure account.
-
-How to Use
-Download the Script: Download the "create_resource_group.ps1" script and save it to your local machine.
-
-Execute the Script: Open a PowerShell session, navigate to the directory where the script is located, and run the script using the following command:
-.\create_resource_group.ps1
-
-
 The script will perform the following steps:
 
 Define the desired resource group name and Azure region (location) within the script. Modify the variables $resourceGroupName and $location to match your preferences.
