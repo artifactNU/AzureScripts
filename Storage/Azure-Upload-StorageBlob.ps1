@@ -1,14 +1,8 @@
-
 # Define the variables
 $resourceGroupName = "MyResourceGroup"        # Replace with the desired resource group name
 $storageAccountName = "mystorageaccount"      # Replace with your storage account name
 $containerName = "myblobcontainer"            # Replace with your blob container name
-
-# Path to the local file you want to upload
-$fileToUpload = "C:\path\to\your\file.txt"    # Replace with the path to your local file
-
-# Connect to your Azure account
-Connect-AzAccount
+$fileToUpload = "C:\path\to\your\file.txt"    # Path to the local file you want to upload
 
 # Function to upload a file to the Blob Container
 function Set-AzBlobContainerContent {
