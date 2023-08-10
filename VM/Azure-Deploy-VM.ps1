@@ -1,7 +1,6 @@
-
-# Variables for VM configuration
+# Define the variables
 $resourceGroupName = "MyResourceGroup"          # Replace with the desired resource group name
-$location = "swedencentral"                     # Replace with your desired Azure region
+$location = "northeurope"                       # Replace with your desired Azure region ('westus', 'eastasia', 'northeurope' etc.)
 $vmName = "MyVM"                                # Replace with your desired VM name
 $vmSize = "Standard_B2s"                        # Replace with the desired VM size (e.g., Standard_B1s, Standard_D2s_v3)
 $adminUsername = "adminUser"                    # Replace with the desired admin username

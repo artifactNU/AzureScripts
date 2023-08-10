@@ -1,10 +1,10 @@
 
 # Variables (You can change these values as needed)
-$resourceGroupName = "YourResourceGroupName"  # Replace with your desired resource group name
-$location = "swedencentral"                   # Replace with your desired Azure region
-$vnetName = "YourVirtualNetworkName"          # Replace with your desired virtual network name
-$subnetName = "YourSubnetName"                # Replace with your desired subnet name
-$nsgName = "YourNSGName"                      # Replace with your desired Network Security Group (NSG) name
+$resourceGroupName = "YourResourceGroupName"    # Replace with your desired resource group name
+$location = "northeurope"                       # Replace with your desired Azure region ('westus', 'eastasia', 'northeurope' etc.)
+$vnetName = "YourVirtualNetworkName"            # Replace with your desired virtual network name
+$subnetName = "YourSubnetName"                  # Replace with your desired subnet name
+$nsgName = "YourNSGName"                        # Replace with your desired Network Security Group (NSG) name
 
 # Create a new Azure Virtual Network
 $vnet = New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $resourceGroupName -Location $location -AddressPrefix "10.0.0.0/16"

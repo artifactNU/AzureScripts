@@ -1,4 +1,4 @@
-### Azure-Create-StorageAcc:
+### Azure-Create-StorageBlob:
 This script connects to your Azure account, creates a new Azure Storage Account, and then creates a Blob Container within that account.
 
 ### Script Explanation
@@ -9,7 +9,7 @@ Finally, it calls the New-AzStorageAccountWithContainer function with the provid
 
 -----------------------------------------------------------------
 
-### Azure-Storage-Upload:
+### Azure-Upload-StorageBlob:
 This script uploads a local file to an Azure Blob Container.
 
 ### Prerequisites

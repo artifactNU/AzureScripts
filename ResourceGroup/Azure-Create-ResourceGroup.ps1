@@ -1,6 +1,6 @@
-# Define the resource group name and location
-$resourceGroupName = "MyResourceGroup" # Replace with your desired resource group name
-$location = "northeurope" # Replace with your desired Azure region ('westus', 'eastasia', 'northeurope' etc.)
+# Define the variables
+$resourceGroupName = "MyResourceGroup"          # Replace with your desired resource group name
+$location = "northeurope"                       # Replace with your desired Azure region ('westus', 'eastasia', 'northeurope' etc.)
 
 # Validate the location
 $validLocations = Get-AzLocation | Select-Object -ExpandProperty Location
