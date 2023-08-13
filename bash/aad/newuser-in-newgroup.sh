@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install Azure CLI if not already installed
 # curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 

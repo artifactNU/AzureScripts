@@ -1,4 +1,4 @@
-### Deploy-VM
+### deploy-vm
 This script allows you to deploy an Azure Virtual Machine with customizable configurations, such as VM size, OS image, network settings, and administrative credentials.
 
 ### Script Explanation
@@ -16,7 +16,7 @@ Deploy the VM using New-AzVM.
 
 -----------------------------------------------------------------
 
-### VM-Backup
+### vm-backup
 This script allows you to set up automated backups for an Azure Virtual Machine (VM) and perform manual backups using Azure Backup services. Additionally, you have the option to restore the VM to a previous state using the backup data if required.
 
 ### Script Explanation

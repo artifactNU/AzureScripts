@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Variables (You can change these values as needed)
 resourceGroupName="YourResourceGroupName"  # Replace with your desired resource group name
 location="northeurope"                     # Replace with your desired Azure region ('westus', 'eastasia', 'northeurope' etc.)
