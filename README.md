@@ -1,5 +1,5 @@
 # Scripts for Azure Automation
-This project is designed as a learning platform to enhance skills in both PowerShell and bash scripting. The scripts provided here are carefully crafted to showcase real-world scenarios, empowering you to manage Azure resources efficiently and confidently.
+This project is designed as a learning platform to enhance skills in both PowerShell and bash scripting. The scripts provided here are carefully crafted to showcase real-world scenarios, empowering you to manage Azure resources efficiently.
 
 ### Prerequisites:
 You need an active Azure account with the required permissions.
