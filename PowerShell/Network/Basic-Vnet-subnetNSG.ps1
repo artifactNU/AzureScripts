@@ -1,3 +1,10 @@
+# Before running this script, make sure to:
+# 1. Install the Azure PowerShell module using the following PowerShell command:
+#    Install-Module -Name Az
+# 2. Connect to your Azure account using the following PowerShell command:
+#    Connect-AzAccount
+# 3. Replace placeholders with your desired values for resource group, location, virtual network, subnet, and NSG.
+
 # Variables (You can change these values as needed)
 $resourceGroupName = "YourResourceGroupName"    # Replace with your desired resource group name
 $location = "northeurope"                       # Replace with your desired Azure region ('westus', 'eastasia', 'northeurope' etc.)
