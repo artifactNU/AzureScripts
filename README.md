@@ -12,7 +12,7 @@ Connect-AzAccount
 Get-AzSubscription
 Select-AzSubscription -SubscriptionName "Your-Subscription-Name"
 ```
-Bash: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest
+bash: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest
 ```
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 az login
@@ -27,13 +27,13 @@ Open a script in a text editor to tailor it to your needs.
 ### Execute a script:
 Replace script-name with the name of the script you want to run.
 
-PowerShell:
-Navigate to the script folder in a PowerShell session and run with:
+#### PowerShell:
+##### Navigate to the script folder in a PowerShell session and run with:
 `
 .\script-name.ps1
 `
-Bash:
-Navigate to the script folder in a bash session and run with:
+#### Bash:
+##### Navigate to the script folder in a bash session and run with:
 `
 chmod +x script-name.sh
 `
