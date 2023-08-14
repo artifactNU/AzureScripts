@@ -1,8 +1,10 @@
 # Before running this script, make sure to:
-# 1. Install the required Azure SDK packages using the following command:
+# 1. Install the Azure PowerShell module using the following PowerShell command:
+#    Install-Module -Name Az
+# 2. Install the required Azure SDK packages using the following command:
 #    pip install azure-identity azure-mgmt-compute azure-mgmt-resource
-# 2. Replace placeholders like "<Azure Subscription ID>" and other variables with your actual values.
-# 3. Ensure you have the necessary permissions in your Azure subscription to create resources.
+# 3. Replace placeholders like "<Azure Subscription ID>" and other variables with your actual values.
+# 4. Ensure you have the necessary permissions in your Azure subscription to create resources.
 
 
 from azure.identity import DefaultAzureCredential
