@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Before running this script, make sure to:
+# 1. Install Azure CLI if not already installed. Uncomment the following line to install:
+#    # curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+# 2. Connect to your Azure AD tenant using the following command:
+#    # az login
+# 3. Replace placeholders with your desired values for the variables below.
+
+
 # Define the variables
 resourceGroupName="MyResourceGroup"          # Replace with the desired resource group name
 storageAccountName="mystorageaccount"        # Replace with your storage account name
