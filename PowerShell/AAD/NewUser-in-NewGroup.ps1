@@ -1,8 +1,9 @@
-# Install Azure AD PowerShell module if not already installed
-# Install-Module -Name AzureAD
-
-# Connect to your Azure AD tenant
-# Connect-AzureAD
+# Before running this script, make sure to:
+# 1. Install the AzureAD module using the following PowerShell command:
+#    Install-Module -Name AzureAD
+# 2. Connect to your Azure AD tenant using the following PowerShell command:
+#    Connect-AzureAD
+# 3. Replace placeholders with actual values for the new user and group.
 
 # Variables
 $newUserDisplayName = "John Doe"                     # Replace with the desired display name for the new user
