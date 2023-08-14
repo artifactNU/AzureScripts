@@ -27,13 +27,13 @@ Open a script in a text editor to tailor it to your needs.
 ### Execute a script:
 Replace script-name with the name of the script you want to run.
 
-PowerShell:
-Navigate to the script folder in a PowerShell session and run with:
+#### PowerShell:
+##### Navigate to the script folder in a PowerShell session and run with:
 `
 .\script-name.ps1
 `
-Bash:
-Navigate to the script folder in a bash session and run with:
+#### Bash:
+##### Navigate to the script folder in a bash session and run with:
 `
 chmod +x script-name.sh
 `
