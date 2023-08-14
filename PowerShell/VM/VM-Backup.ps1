@@ -1,3 +1,10 @@
+#    Before running this script, make sure to:
+# 1. Install the Azure PowerShell module using the following PowerShell command:
+#    Install-Module -Name Az
+# 2. Connect to your Azure account using the following PowerShell command:
+#    Connect-AzAccount
+# 3. Replace placeholders with your desired values for resource group, VM details, backup policy, and vault name.
+
 # Define the variables
 $resourceGroupName = "MyResourceGroup"          # Replace with your resource group name
 $virtualMachineName = "MyVirtualMachine"        # Replace with your virtual machine name
