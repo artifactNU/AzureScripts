@@ -1,4 +1,4 @@
-# Before running this script, make sure to:
+#    Before running this script, make sure to:
 # 1. Install the AzureAD module using the following PowerShell command:
 #    Install-Module -Name AzureAD
 # 2. Connect to your Azure AD tenant using the following PowerShell command:
