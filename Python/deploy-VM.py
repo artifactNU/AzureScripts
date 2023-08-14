@@ -1,3 +1,10 @@
+# Before running this script, make sure to:
+# 1. Install the required Azure SDK packages using the following command:
+#    pip install azure-identity azure-mgmt-compute azure-mgmt-resource
+# 2. Replace placeholders like "<Azure Subscription ID>" and other variables with your actual values.
+# 3. Ensure you have the necessary permissions in your Azure subscription to create resources.
+
+
 from azure.identity import DefaultAzureCredential
 from azure.mgmt.compute import ComputeManagementClient
 from azure.mgmt.resource import ResourceManagementClient
