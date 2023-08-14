@@ -1,4 +1,4 @@
-# Before running this script, make sure to:
+#    Before running this script, make sure to:
 # 1. Install the Azure PowerShell module using the following PowerShell command:
 #    Install-Module -Name Az
 # 2. Connect to your Azure account using the following PowerShell command:
