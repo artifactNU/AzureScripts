@@ -17,7 +17,7 @@ $imageOffer = "WindowsServer"                   # Offer of the VM image (e.g., W
 $imageSKU = "2019-Datacenter"                   # SKU of the VM image (e.g., 2019-Datacenter, 18.04-LTS)
 $imageVersion = "latest"                        # Version of the VM image to use (e.g., latest, specific version)
 
-# --- Resource Group ---
+# Create Resource Group
 Write-Host "Checking if the resource group exists: $resourceGroupName"
 if (-not (Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue)) {
     New-AzResourceGroup -Name $resourceGroupName -Location $location
@@ -27,7 +27,7 @@ else {
     Write-Host "Resource group already exists: $resourceGroupName"
 }
 
-# --- VM Configuration ---
+# VM Configuration
 Write-Host "Creating VM configuration for $vmName"
 $vmConfig = New-AzVMConfig -VMName $vmName -VMSize $vmSize
 
@@ -40,7 +40,7 @@ $vmConfig = Set-AzVMSourceImage -VM $vmConfig -PublisherName $imagePublisher -Of
                                 -Skus $imageSKU -Version $imageVersion
 $vmConfig = Add-AzVMNetworkInterface -VM $vmConfig -Id (Get-AzNetworkInterface -ResourceGroupName $resourceGroupName).Id
 
-# --- Virtual Machine ---
+# Create Virtual Machine
 Write-Host "Checking if the virtual machine exists: $vmName"
 if (-not (Get-AzVM -ResourceGroupName $resourceGroupName -Name $vmName -ErrorAction SilentlyContinue)) {
     New-AzVM -ResourceGroupName $resourceGroupName -Location $location -VM $vmConfig
