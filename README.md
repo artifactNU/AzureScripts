@@ -33,11 +33,14 @@ Replace script-name with the name of the script you want to run.
 .\script-name.ps1
 `
 #### Bash:
-##### Navigate to the script folder in a bash session and run with:
+##### Navigate to the script folder in a bash session and change the permission with:
 `
 chmod +x script-name.sh
 `
-
+##### Run with:
+`
+./script-name.sh
+`
 ### License Information:
 This project is distributed under the BSD 3-Clause License, allowing you the freedom to use, modify, and distribute the scripts while providing appropriate attribution.
 
