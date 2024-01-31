@@ -104,4 +104,3 @@ if (-not (Get-AzVM -ResourceGroupName $resourceGroupName -Name $vmName -ErrorAct
 else {
     Write-Host "Virtual Machine already exists: $vmName"
 }
-```
