@@ -42,5 +42,5 @@ chmod +x script-name.sh
 ./script-name.sh
 `
 ### License Information:
-This project is distributed under the BSD 3-Clause License, allowing you the freedom to use, modify, and distribute the scripts while providing appropriate attribution.
+This project is distributed under the MIT-license, allowing you the freedom to use, modify, and distribute the scripts.
 
